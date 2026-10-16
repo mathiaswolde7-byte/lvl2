@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LVL — Raise the floor</title>
+  <meta name="description" content="LVL — heavyweight basics and outerwear. Drop 01 is live.">
+  <link rel="icon" href="assets/lvl-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{if(sessionStorage.getItem("lvl-fade"))document.documentElement.classList.add("arriving")}catch(e){}</script>
+  <script type="speculationrules">{"prefetch":[{"where":{"href_matches":"/*.html*"},"eagerness":"moderate"}]}</script>
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <main>
+    <!-- 1. Hero: the shirt panel expands to full screen as you scroll -->
+    <section class="hero" aria-label="Drop 01">
+      <div class="hero__stick">
+        <div class="hero__head">
+          <span class="label muted">Drop 01 / Fall 2026</span>
+          <h1 class="display">Raise the floor</h1>
+        </div>
+        <div class="hero__panel">
+          <div class="hero__art" aria-hidden="true"></div>
+          <img class="hero__logo" src="assets/lvl-logo-full.png" alt="LVL">
+          <div class="hero__shade" aria-hidden="true"></div>
+          <div class="hero__outro">
+            <div>
+              <h2 class="display h1 chrome">Drop 01<br>is live.</h2>
+              <p>Heavyweight basics and outerwear, cut one level up.</p>
+            </div>
+            <a class="btn btn--light" href="shop.html">Shop the drop</a>
+          </div>
+        </div>
+        <div class="hero__cue label" aria-hidden="true">Scroll<span></span></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <span class="ticker__track">LVL — Heavyweight cotton — Small runs — Free returns 30 days — LVL — New drop every season — &nbsp;LVL — Heavyweight cotton — Small runs — Free returns 30 days — LVL — New drop every season — &nbsp;</span>
+    </div>
+
+    <!-- 2. Story-style circles -->
+    <nav class="stories wrap" aria-label="Quick links" data-stories></nav>
+
+    <!-- 3. Latest drop: pinned, slides sideways -->
+    <section class="lineup" aria-label="Latest drop">
+      <div class="lineup__stick">
+        <div class="wrap lineup__head">
+          <div>
+            <span class="label muted">Drop 01 · 12 pieces</span>
+            <h2 class="display h2">Latest drop</h2>
+          </div>
+          <div style="display:flex;align-items:center;gap:18px">
+            <div class="lineup__bar" aria-hidden="true"><i></i></div>
+            <a class="label link" href="shop.html">View all</a>
+          </div>
+        </div>
+        <div class="lineup__track" data-lineup></div>
+      </div>
+    </section>
+
+    <!-- 4. Discover collections -->
+    <section class="section">
+      <div class="wrap section__head reveal">
+        <div>
+          <span class="label muted">4 collections · Drop 01</span>
+          <h2 class="display h2">Discover collections</h2>
+        </div>
+        <a class="label link" href="shop.html">Shop all</a>
+      </div>
+      <div class="colls" data-collections></div>
+    </section>
+
+    <!-- 5. Mystery box -->
+    <section class="mystery" id="mystery" aria-label="Mystery Box 01">
+      <div class="wrap mystery__in">
+        <div class="mystery__stage" aria-hidden="true">
+          <div class="cube">
+            <div class="cube__f f1"><img src="assets/lvl-logo.png" alt=""></div>
+            <div class="cube__f f2"><span class="chrome">?</span></div>
+            <div class="cube__f f3"><img src="assets/lvl-logo.png" alt=""></div>
+            <div class="cube__f f4"><span class="chrome">?</span></div>
+            <div class="cube__f f5"><span class="label">LVL · 01</span></div>
+            <div class="cube__f f6"></div>
+          </div>
+          <div class="cube__shadow"></div>
+        </div>
+        <div class="mystery__copy reveal">
+          <span class="label mystery__live"><i></i> Live now</span>
+          <h2 class="display h1 chrome">Mystery Box 01</h2>
+          <p>One LVL tee from the current drop, picked at random. It could be a sold-out piece. You find out which one when it arrives.</p>
+          <p class="mystery__price"><b>$45</b> <span class="muted">Worth up to $52</span></p>
+          <a class="btn btn--light btn--block" href="#mystery" data-mystery-buy>Buy Mystery Box — $45</a>
+          <p class="label muted" style="margin:0">Pick your size and pay on Stripe's secure page · All mystery box sales are final.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Camo stripes: evenly spaced vertical stripes of misty camo, silver outlines, white between -->
+    <section class="zoom" aria-label="Wear it like you mean it">
+      <div class="zoom__stick">
+        <div class="zoom__stripes" aria-hidden="true">
+          <div class="zoom__window"><div class="zoom__camo"></div></div>
+          <div class="zoom__glow"><div class="zoom__edges"></div></div>
+        </div>
+        <span class="zoom__caption label">LVL / Drop 01</span>
+      </div>
+    </section>
+
+    <!-- 7. Why LVL -->
+    <section class="section wrap">
+      <div class="story">
+        <div class="reveal">
+          <span class="label muted">Why LVL</span>
+          <h2 class="display h1" style="margin-top:8px">Every piece<br>is a step up.</h2>
+        </div>
+        <div class="story__points">
+          <div class="point reveal" style="--d:.05s"><span class="label muted">01</span><h3>Heavier fabric</h3><p>Dense cotton that holds its shape wash after wash.</p></div>
+          <div class="point reveal" style="--d:.15s"><span class="label muted">02</span><h3>Small runs</h3><p>Each drop is made in limited quantities. When it's gone, it's gone.</p></div>
+          <div class="point reveal" style="--d:.25s"><span class="label muted">03</span><h3>Cut to move</h3><p>Boxy fits, dropped shoulders and room where you need it.</p></div>
+          <div class="point reveal" style="--d:.35s"><span class="label muted">04</span><h3>Easy returns</h3><p>Not the right size? Send it back within 30 days.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Newsletter -->
+    <section class="section wrap">
+      <div class="news reveal">
+        <div>
+          <h2 class="display h2">Get on the list</h2>
+          <p>First access to every drop, before it goes public.</p>
+        </div>
+        <form data-news>
+          <label class="sr-only" for="news-email">Email address</label>
+          <input class="input" id="news-email" type="email" required placeholder="Email address">
+          <button class="btn" type="submit">Join</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/catalog.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

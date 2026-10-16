@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — LVL</title>
+  <link rel="icon" href="assets/lvl-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{if(sessionStorage.getItem("lvl-fade"))document.documentElement.classList.add("arriving")}catch(e){}</script>
+  <script type="speculationrules">{"prefetch":[{"where":{"href_matches":"/*.html*"},"eagerness":"moderate"}]}</script>
+</head>
+<body data-page="checkout">
+  <div id="site-header"></div>
+
+  <main class="wrap" data-checkout>
+    <div class="page-head" style="padding-bottom:20px">
+      <div>
+        <a class="label muted link" href="cart.html">← Back to bag</a>
+        <h1 class="display h1" style="margin-top:8px">Checkout</h1>
+      </div>
+      <span class="label muted">Secure checkout by Stripe</span>
+    </div>
+
+    <div class="two-col">
+      <section class="pay">
+        <h2 class="display" style="font-size:24px;margin:0">Review your order</h2>
+        <div class="lines" data-order></div>
+
+        <ol class="pay__steps">
+          <li><b>Pay securely on Stripe.</b> You'll enter your email, shipping address and card (or Apple Pay / Google Pay) on Stripe's checkout page. LVL never sees your card number.</li>
+          <li><b>Pick your delivery there.</b> Standard is <span data-std-label>free</span>, or express (1–2 business days) for <span data-exp-label>$18</span>.</li>
+          <li><b>Get your receipt.</b> You'll come straight back here with your order number, and a receipt is emailed to you.</li>
+        </ol>
+
+        <p class="error" role="alert" data-pay-error hidden></p>
+        <button class="btn btn--block pay__btn" type="button" data-pay>Pay securely</button>
+        <p class="label muted pay__note">
+          <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          Encrypted payment · Promo codes can be entered on the next page
+        </p>
+      </section>
+
+      <aside class="summary">
+        <h2 class="display" style="font-size:24px">Summary</h2>
+        <div><p class="label muted" style="margin:0 0 8px" data-free-msg></p><div class="meter"><i data-meter></i></div></div>
+        <div class="summary__row"><span>Subtotal</span><span data-sub></span></div>
+        <div class="summary__row"><span>Shipping</span><span data-ship></span></div>
+        <div class="summary__row muted"><span>Tax</span><span>Calculated on next page</span></div>
+        <div class="summary__total"><span>Estimated total</span><span data-total></span></div>
+      </aside>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/catalog.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

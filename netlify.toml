@@ -1,0 +1,18 @@
+# Netlify settings for the LVL site
+[build]
+  publish = "."                 # the website files live in this folder
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"      # bundles js/catalog.js into the payment function
+
+# Short, friendly address for the payment endpoints
+[[redirects]]
+  from = "/api/checkout"
+  to = "/.netlify/functions/create-checkout"
+  status = 200
+
+[[redirects]]
+  from = "/api/order"
+  to = "/.netlify/functions/get-order"
+  status = 200

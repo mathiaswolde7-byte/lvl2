@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product — LVL</title>
+  <link rel="icon" href="assets/lvl-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{if(sessionStorage.getItem("lvl-fade"))document.documentElement.classList.add("arriving")}catch(e){}</script>
+  <script type="speculationrules">{"prefetch":[{"where":{"href_matches":"/*.html*"},"eagerness":"moderate"}]}</script>
+</head>
+<body data-page="product">
+  <div id="site-header"></div>
+
+  <main>
+    <nav class="wrap crumbs label" aria-label="Breadcrumb">
+      <a href="shop.html">Shop</a><span>/</span>
+      <a href="shop.html" data-crumb-cat></a><span>/</span>
+      <span data-crumb-name style="color:var(--ink)"></span>
+    </nav>
+
+    <div class="wrap pdp">
+      <div class="gallery" data-gallery></div>
+
+      <div class="info">
+        <div>
+          <span class="tag" data-tag style="position:static;display:inline-block;background:var(--ink);color:#fff;margin-bottom:10px"></span>
+          <h1 class="display" data-name></h1>
+          <p class="price" data-price></p>
+        </div>
+        <p class="desc" data-desc></p>
+
+        <div>
+          <div class="opt-label label"><span>Color — <span data-color-name></span></span></div>
+          <div class="swatches" role="group" aria-label="Color" data-swatches></div>
+        </div>
+
+        <div>
+          <div class="opt-label label"><span>Size</span><button class="link label" style="background:none;border:0;padding:0" data-size-guide>Size guide</button></div>
+          <div class="sizes" role="group" aria-label="Size" data-sizes></div>
+          <p class="error" role="alert" data-error hidden>Please select a size.</p>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <button class="btn btn--block" data-add>Add to bag</button>
+          <form class="notify" data-notify hidden>
+            <label class="sr-only" for="notify-email">Email</label>
+            <input class="input" id="notify-email" type="email" required placeholder="Email me if it restocks">
+            <button class="btn" type="submit">Notify me</button>
+          </form>
+          <p class="label muted" style="margin:0">Free shipping over $100 · Free returns within 30 days</p>
+        </div>
+
+        <div class="acc">
+          <details open><summary>Details</summary><p data-desc2>Heavyweight cotton jersey. Printed chrome LVL logo.
+[Add your fabric content and weight here]</p></details>
+          <details><summary>Fit</summary><p data-fit></p></details>
+          <details data-guide><summary>Size guide</summary><p>Chest width (in), laid flat:
+XS 19 · S 20.5 · M 22 · L 23.5 · XL 25 · XXL 26.5
+[Replace with your measured specs]</p></details>
+          <details><summary>Shipping &amp; returns</summary><p>Free shipping on orders over $100.
+Free returns within 30 days of delivery.</p></details>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="wrap section__head"><h2 class="display h2">You may also like</h2></div>
+      <div class="grid" data-related></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/catalog.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
